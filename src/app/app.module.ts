@@ -5,12 +5,18 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SampleComponent } from './sample/sample.component';
 import { UserComponent } from './user/user.component';
+import { CreateCategoryComponent } from './create-category/create-category.component';
+import { UsersDataComponent } from './users-data/users-data.component';
+import { CategoriesComponent } from './categories/categories.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SampleComponent,
-    UserComponent
+    UserComponent,
+    CreateCategoryComponent,
+    UsersDataComponent,
+    CategoriesComponent
   ],
   imports: [
     BrowserModule,

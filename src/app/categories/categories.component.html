@@ -1,0 +1,20 @@
+<table class="table">
+    <thead>
+        <tr>
+            <th>id</th>
+            <th>name</th>
+            <th>action</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let category of categories; trackBy: trackUser">
+            <td>{{ category.id }}</td>
+            <td>{{ category.name }}</td>
+            <td><input type="text"></td>
+        </tr>
+    </tbody>
+    <button class="btn"
+        [ngClass]="['btn-primary', 'btn-sm', 'my-2']"
+        (click)="onAddCategory()"
+    >Add Category</button>
+</table>

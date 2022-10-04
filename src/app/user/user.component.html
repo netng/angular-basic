@@ -1,1 +1,11 @@
-<p>user works!</p>
+<div>
+    <button [ngClass]="'btn btn-primary'" (click)="onButtonClick()">
+        Add User
+    </button>
+
+    <div *ngIf="userCreated; else elseBlock">User created</div>
+    <ng-template #elseBlock>
+        <div>Please click button above to create user</div>
+    </ng-template>
+
+</div>

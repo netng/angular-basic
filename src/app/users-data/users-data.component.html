@@ -1,0 +1,21 @@
+<table class="table">
+    <thead>
+        <tr>
+            <th>id</th>
+            <th>name</th>
+            <th>index</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr 
+            *ngFor="let user of users;
+                index as i;
+                even as even;
+                odd as odd"
+                [ngClass]="{even: even, odd: odd}">
+            <td>{{ user.id }}</td>
+            <td>{{ user.name }}</td>
+            <td>{{ i }}</td>
+        </tr>
+    </tbody>
+</table>
